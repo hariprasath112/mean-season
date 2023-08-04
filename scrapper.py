@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from bs4 import BeautifulSoup
 import time, requests
+global breaker
+breaker=False
 def main():
     query =input("Enter a search term below: ")
     driver= webdriver.Chrome()
@@ -34,6 +36,7 @@ def main():
             pass
     except:
         print("Failed to GET. Invalid entry.")
+        global breaker
         breaker=True
         driver.close()
     if (breaker!=True):
@@ -54,6 +57,7 @@ def main():
                     print("Season ",i,":",round(sum(tempList)/len(dataList[i]),2))        
         except:
             print("Error parsing data")
+        main()
     else:
         main()
 main()
