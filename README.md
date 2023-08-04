@@ -1,5 +1,5 @@
 # mean-season
-Python program using Selenium and BeautifulSoup4 to generate the average of listed seasons of a TV Show from IMDb. It is a straightforward process to see the ratings of individual ratings of the season in metacritic, but most often they lack the ratings and show a blank image evem for decades old emmy winning TV shows. IMDb does not have this feature, atleast not in a easily discernible way. This program scrapes and displays the average ratings of each season.
+Python program using Selenium and BeautifulSoup4 to generate the average of listed seasons of a TV Show from IMDb. It is a straightforward process to see the ratings of individual ratings of the season in Metacritic, but most often they lack the ratings and show a blank image evem for decades old emmy winning TV shows. IMDb does not have this feature, at least not in a easily discernible way. This program scrapes and displays the average ratings of each season.
 
 | IMDb data  | Metacritic data  |
 | :------------: | :------------: |
