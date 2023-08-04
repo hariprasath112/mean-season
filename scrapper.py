@@ -57,6 +57,7 @@ def main():
                     print("Season ",i,":",round(sum(tempList)/len(dataList[i]),2))        
         except:
             print("Error parsing data")
+        driver.close()
         main()
     else:
         main()
